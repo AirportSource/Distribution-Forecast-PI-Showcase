@@ -3,4 +3,5 @@
 .RData
 .Ruserdata
 .Renviron
-SQL/
+sql/
+workflows/
