@@ -550,12 +550,18 @@ lgb_quantile_cv <- purrr::map_dfr(
 
 # Sauvegarde des prévisions LightGBM
 
-saveRDS(
-  lgb_point_cv,
-  here("lightgbm_point_cv_forecasts.rds")
+file.exists(
+  here(
+    "outputs",
+    "tables",
+    "lightgbm_point_cv_forecasts.rds"
+  )
 )
 
-saveRDS(
-  lgb_quantile_cv,
-  here("lightgbm_quantile_cv_forecasts.rds")
+file.exists(
+  here(
+    "outputs",
+    "tables",
+    "lightgbm_quantile_cv_forecasts.rds"
+  )
 )
